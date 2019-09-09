@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Robust-NTF
 A PyTorch (CPU/GPU) implementation of Robust Non-negative Tensor Factorization (rNTF), as will appear in,
 
@@ -80,3 +81,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+=======
+# robustNTF
+>>>>>>> dc7a45e99d14444f38ca090e674b57ee6303ade6
