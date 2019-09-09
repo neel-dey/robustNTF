@@ -7,7 +7,7 @@ Pre-print available [here](https://drive.google.com/file/d/1jTshyUb7B5lRtrSncXjb
 
 rNTF computes a low-rank non-negative approximation of a tensor corrupted with structured sparse outliers, while allowing for a flexible modeling of noise assumptions.
 
-This repository implements only the rNTF portion of the paper, with the other aspects (diffeomorphic motion correction for cellular motion, and functional paired testing for spectra) being straightforward applications of [ANTs](http://stnava.github.io/ANTs/) and [PACE](http://www.stat.ucdavis.edu/PACE/), respectively. Please feel free to contact me at neel DOT dey AT nyu DOT edu for questions regarding any of the above.
+This repository implements only the rNTF portion of the paper, with the other aspects (diffeomorphic motion correction for granular motion, and functional paired testing for spectra) being straightforward applications of [ANTs](http://stnava.github.io/ANTs/) and [PACE](http://www.stat.ucdavis.edu/PACE/), respectively. Please feel free to contact me at neel DOT dey AT nyu DOT edu for questions regarding any of the above.
 
 ## Features
 * Implements the low-rank and sparse non-negative canonical polyadic decomposition/tensor factorization proposed in the above paper. The paper presented methodology for 3-dimensional tensors, whereas this package can handle tensors of arbitrary dimension.
@@ -30,7 +30,7 @@ That will create a conda virtual environment with all required dependencies. The
   * pytorch
   * tensorly
 
-Matplotlib and its dependencies are included just to run the notebook in the './example_notebooks/' folder.
+Matplotlib and its dependencies are included just to run the notebook in the './example_notebooks/' folder (to be added).
 
 This package was tested with PyTorch 1.2. with CUDA 10.0, but should be compatible with everything 0.4 and up. If any incompatibility is found, please open an issue.
 
@@ -49,7 +49,7 @@ data = torch.rand(30,40,50,60).cuda()
 factors, outlier, obj = robust_ntf(data, rank=2, beta=1.5, reg_val=10, tol=1e-4)
 ```
 
-A minimal working example with more meaningful data is provided in the `./example_notebooks/` folder.
+A minimal working example with more meaningful data is provided in the `./example_notebooks/` folder (to be added).
 
 ## Reference
 
