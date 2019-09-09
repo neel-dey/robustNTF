@@ -37,7 +37,7 @@ This package was tested with PyTorch 1.2. with CUDA 10.0, but should be compatib
 ## Minimal working example
 
 ```python
-from robust_ntf import robust_ntf
+from robust_ntf.robust_ntf import robust_ntf
 
 # To use the GPU at fp64 precision (use FloatTensor for fp32):
 torch.set_default_tensor_type(torch.cuda.DoubleTensor)
@@ -49,7 +49,8 @@ data = torch.rand(30,40,50,60).cuda()
 factors, outlier, obj = robust_ntf(data, rank=2, beta=1.5, reg_val=10, tol=1e-4)
 ```
 
-A minimal working example with more meaningful data is provided in the `./example_notebooks/` folder (to be added).
+### To-do
+An example with more meaningful data will be provided in the `./example_notebooks/` folder.
 
 ## Reference
 
