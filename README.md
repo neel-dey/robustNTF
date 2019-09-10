@@ -30,7 +30,7 @@ That will create a conda virtual environment with all required dependencies. The
   * pytorch
   * tensorly
 
-Matplotlib and its dependencies are included just to run the notebook in the './example_notebooks/' folder (to be added).
+Matplotlib, Jupyter and their dependencies are only included to run the notebook in the './example_notebooks/' folder.
 
 This package was tested with PyTorch 1.2. with CUDA 10.0, but should be compatible with everything 0.4 and up. If any incompatibility is found, please open an issue.
 
@@ -49,8 +49,7 @@ data = torch.rand(30,40,50,60).cuda()
 factors, outlier, obj = robust_ntf(data, rank=2, beta=1.5, reg_val=10, tol=1e-4)
 ```
 
-### To-do
-An example with more meaningful data will be provided in the `./example_notebooks/` folder.
+An example with more meaningful data is provided in the `./example_notebooks/` folder.
 
 ## Reference
 
