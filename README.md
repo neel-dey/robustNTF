@@ -3,6 +3,8 @@ A PyTorch (CPU/GPU) implementation of Robust Non-negative Tensor Factorization (
 
 > Dey, N., et al. *Robust Non-negative Tensor Factorization, Diffeomorphic Motion Correction, and Functional Statistics to Understand Fixation in Fluorescence Microscopy*, MICCAI, October 2019.
 
+![](https://github.com/neel-dey/robustNTF/raw/master/images/paper_pipeline.png)
+
 Pre-print available [here](https://drive.google.com/file/d/1jTshyUb7B5lRtrSncXjbXVkNmqaz4kt4/view?usp=sharing).
 
 rNTF computes a low-rank non-negative approximation of a tensor corrupted with structured sparse outliers, while allowing for a flexible modeling of noise assumptions.
